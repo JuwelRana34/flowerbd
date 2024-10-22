@@ -4,7 +4,7 @@ function FlowerCard({flower , handelClick}) {
     const{category ,color,description,id,image_url,name,price,rating,stock}= flower
 
   return (
-    <div className="card bg-base-100 w-full md:w-96 p-3 shadow-xl">
+    <div className="card bg-base-100 w-full md:w-auto p-3 shadow-xl">
     <figure>
       <img className="w-full object-cover h-[350px]" 
         src={image_url}

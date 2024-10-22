@@ -4,7 +4,11 @@ import FlowerCard from './components/FlowerCard'
 
 function App() {
   const [flowersdata, setFlowersdata] = useState([])
-  const [flowersName, setFlowersName] = useState([])
+  const [flowersName, setFlowersName] = useState(() => {
+    // Retrieve the flower names from localStorage if available
+    const savedFlowers = localStorage.getItem('flowersNames');
+    return savedFlowers ? JSON.parse(savedFlowers) : [];
+  })
 
 
   useEffect(() => {
@@ -14,7 +18,13 @@ function App() {
   .then(data=> setFlowersdata(data))
  }
  data()
+ 
   }, [])
+
+  useEffect(() => {
+    // Save the flower names to localStorage whenever it changes
+    localStorage.setItem('flowersNames', JSON.stringify(flowersName));
+  }, [flowersName]);
 
   const handelClick = (name) =>{
     if (!flowersName.includes(name)){
@@ -38,7 +48,7 @@ function App() {
       <div className='md:flex '>
 
 
-      <div className='grid md:grid-cols-2 my-5 space-y-4 justify-items-center gap-2 pb-2 md:w-[70%]'>
+      <div className='grid px-4 md:grid-cols-2 my-5 space-x-4 space-y-4 justify-items-center gap-2 pb-2 md:w-[70%]'>
  
       {flowersdata.map(flower=>
         <FlowerCard handelClick={handelClick} key={flower.id} flower={flower}/>
