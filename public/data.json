@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "name": "Rose Bouquet",
+      "category": "Bouquet",
+      "price": 25.99,
+      "description": "A beautiful bouquet of red roses, perfect for special occasions.",
+      "image_url": "https://images.unsplash.com/photo-1694620131938-0f88d08610a4?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fFJvc2UlMjBCb3VxdWV0fGVufDB8fDB8fHww",
+      "stock": 15,
+      "rating": 4.7,
+      "color": "Red",
+      "tags": ["romantic", "anniversary", "valentine"]
+    },
+    {
+      "id": 2,
+      "name": "Tulip Arrangement",
+      "category": "Arrangement",
+      "price": 18.99,
+      "description": "A vibrant arrangement of fresh tulips in various colors.",
+      "image_url": "https://images.unsplash.com/photo-1458122989516-8ef176c56d91?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 20,
+      "rating": 4.5,
+      "color": "Mixed",
+      "tags": ["spring", "birthday", "fresh"]
+    },
+    {
+      "id": 3,
+      "name": "Sunflower Basket",
+      "category": "Basket",
+      "price": 30.50,
+      "description": "A basket of large sunflowers that brings warmth and joy.",
+      "image_url": "https://images.unsplash.com/photo-1621371047525-f99f36b60b9d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fFN1bmZsb3dlciUyMEJhc2tldHxlbnwwfHwwfHx8MA%3D%3D",
+      "stock": 10,
+      "rating": 4.8,
+      "color": "Yellow",
+      "tags": ["summer", "happy", "cheerful"]
+    },
+    {
+      "id": 4,
+      "name": "Orchid Delight",
+      "category": "Potted",
+      "price": 40.00,
+      "description": "An elegant potted orchid plant, perfect for gifting or home decor.",
+      "image_url": "https://images.unsplash.com/photo-1586799958784-8687bc5d659f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fE9yY2hpZCUyMERlbGlnaHR8ZW58MHx8MHx8fDA%3D",
+      "stock": 8,
+      "rating": 4.9,
+      "color": "Purple",
+      "tags": ["elegant", "gift", "decor"]
+    },
+    {
+      "id": 5,
+      "name": "Daisy Delight",
+      "category": "Bouquet",
+      "price": 12.99,
+      "description": "A simple but charming bouquet of white daisies.",
+      "image_url": "https://images.unsplash.com/photo-1536609730163-4268e724f238?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fERhaXN5JTIwRGVsaWdodHxlbnwwfHwwfHx8MA%3D%3D",
+      "stock": 25,
+      "rating": 4.6,
+      "color": "White",
+      "tags": ["cheerful", "affordable", "summer"]
+    }
+  ]
+  
