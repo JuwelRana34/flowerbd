@@ -41,6 +41,13 @@ function App() {
     setFlowersName(updatedFlowers)
   }
 
+  const [activeButton, setActiveButton] = useState(null);
+
+  const handleButtonClick = (button) => {
+    setActiveButton(button);
+  };
+
+
 
   return (
     <>
@@ -62,15 +69,33 @@ function App() {
         <div className=' space-y-2 '>
           {flowersName.map((name,index) => (
             <div key={index}>
-              <p className='bg-white py-2  rounded text-gray-700 text-center font-semibold'
-              onClick={()=>handelDelete(name)}
+              <div className={`flex justify-between items-center  py-2 px-4  rounded text-gray-700 text-center font-semibold bg-gradient-to-r ${index % 2 == 0?"from-violet-400 to-purple-200": "from-purple-200 to-violet-400"  }`}>
+
+              <p className={` `}
+              
               >{name}</p>
+              <button className='text-rose-500 bg-red-300 p-2 rounded-md hover:bg-red-400 hover:text-red-600' onClick={()=>handelDelete(name)}> delete</button>
+              </div>
             </div>
           ))}
         </div>
       </div>
 
       </div>
+
+      <button
+        className={activeButton === 'button1' ? 'active' : ''}
+        onClick={() => handleButtonClick('button1')}
+      >
+        Button 1
+      </button>
+
+      <button
+        className={activeButton === 'button2' ? 'active' : ''}
+        onClick={() => handleButtonClick('button2')}
+      >
+        Button 2
+      </button>
       
     </>
   )
