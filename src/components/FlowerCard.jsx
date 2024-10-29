@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 
 function FlowerCard({flower , handelClick}) {
 
     const{category ,color,description,id,image_url,name,price,rating,stock}= flower
 
   return (
-    <div className="card bg-base-100 w-full md:w-auto p-3 shadow-xl">
+    <div key={id} className="card bg-base-100 w-full md:w-auto p-3 shadow-xl">
     <figure>
       <img className="w-full object-cover h-[350px]" 
         src={image_url}
@@ -21,6 +22,7 @@ function FlowerCard({flower , handelClick}) {
             <li> Category:- {category}</li>
             <li>Color:- {color}</li>
             <li>Stock:- {stock}</li>
+            <li>Price:- ${price}</li>
         </ul>
        
         

@@ -1,6 +1,8 @@
 import { useState, useEffect} from 'react'
 import './App.css'
 import FlowerCard from './components/FlowerCard'
+import { NavbarComponent } from './components/navbar/NavbarComponent'
+import { Outlet } from 'react-router-dom'
 
 function App() {
   const [flowersdata, setFlowersdata] = useState([])
@@ -51,6 +53,8 @@ function App() {
 
   return (
     <>
+    <NavbarComponent />
+    
       <h1 className='bg-green-50 text-center py-4 text-xl font-bold'>flower shop</h1>
       <div className='md:flex '>
 
@@ -71,9 +75,8 @@ function App() {
             <div key={index}>
               <div className={`flex justify-between items-center  py-2 px-4  rounded text-gray-700 text-center font-semibold bg-gradient-to-r ${index % 2 == 0?"from-violet-400 to-purple-200": "from-purple-200 to-violet-400"  }`}>
 
-              <p className={` `}
-              
-              >{name}</p>
+              <p>{name}</p> 
+              {/* <p>{price}</p> */}
               <button className='text-rose-500 bg-red-300 p-2 rounded-md hover:bg-red-400 hover:text-red-600' onClick={()=>handelDelete(name)}> delete</button>
               </div>
             </div>
